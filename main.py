@@ -4,6 +4,9 @@ from textblob import TextBlob
 from nltk.sentiment import SentimentIntensityAnalyzer
 import os
 
+import nltk
+nltk.download('vader_lexicon')
+
 app = Flask(__name__)
 
 UPLOAD_FOLDER = '/path/to/the/uploads'
